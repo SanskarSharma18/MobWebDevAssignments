@@ -1,0 +1,54 @@
+/* Common Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.label-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px; /* Increase font size for labels on mobile devices */
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #ffe6e6; /* Background color for mobile screens */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        font-size: 18px; /* Increase size of input boxes for mobile devices */
+    }
+
+    .label-input-container {
+        flex-direction: column;
+    }
+}
+
+/* Tablet/Desktop Styles */
+@media screen and (min-width: 601px) {
+    body {
+        background-color: #e6f7ff; /* Background color for tablet/desktop screens */
+    }
+
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+    }
+}
