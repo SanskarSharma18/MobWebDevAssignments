@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Form</title>
+</head>
+<body>
+    <header>
+        <h1>SANSKAR SHARMA</h1>
+    </header>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <form id="school-form" class="form-section">
+                    <h2>School Information</h2>
+                    <div class="form-field">
+                        <label for="schoolName">Name of School</label>
+                        <input type="text" id="schoolName" name="schoolName" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="dateOfJoining">Date of Joining</label>
+                        <input type="date" id="dateOfJoining" name="dateOfJoining" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Graduated</label>
+                        <label for="graduatedYes">Yes</label>
+                        <input type="radio" id="graduatedYes" name="graduated" value="Yes" required>
+                        <label for="graduatedNo">No</label>
+                        <input type="radio" id="graduatedNo" name="graduated" value="No" required>
+                    </div>
+                </form>
+            </div>
+            <div class="swiper-slide">
+                <form id="personal-form" class="form-section">
+                    <h2>Personal Information</h2>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+                    </div>
+                    <div class="form-field">
+                        <label for="zip">Zip code (Canada)</label>
+                        <input type="text" id="zip" name="zip" required pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d">
+                    </div>
+                </form>
+            </div>
+            <div class="swiper-slide">
+                <form id="payment-form" class="form-section">
+                    <h2>Payment Information</h2>
+                    <div class="form-field">
+                        <label for="creditCard">Credit Card Number</label>
+                        <input type="text" id="creditCard" name="creditCard" required pattern="[0-9]{10}">
+                    </div>
+                    <div class="form-field">
+                        <label for="expirationDate">Expiration Date</label>
+                        <input type="date" id="expirationDate" name="expirationDate" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" required pattern="[0-9]{3}">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <footer>
+        <div>
+            <p>&copy; 2023 Sanskar Sharma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
